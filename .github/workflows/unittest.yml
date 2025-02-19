@@ -7,7 +7,7 @@ on:
   pull_request:
     branches:
       - main
-  workflow_dispatch:  # Ajouté pour pouvoir lancer le workflow manuellement
+  workflow_dispatch:  
 
 jobs:
   test:
@@ -29,7 +29,7 @@ jobs:
         run: sudo apt-get install -y jq
 
       - name: Run tests
-        run: npm test -- --json --outputFile=test-results.json
+        run: npm test
 
       - name: Upload test results
         uses: actions/upload-artifact@v4
