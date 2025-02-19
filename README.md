@@ -12,3 +12,4 @@ Ce projet est destiné à valider les connaissances en DevOps des élèves de 3�
 ## Test Results
 
 [![Run Unit Tests](https://github.com/GwendolineMenuge/ControleContinueDevOps/actions/workflows/unittest.yml/badge.svg?branch=master)](https://github.com/GwendolineMenuge/ControleContinueDevOps/actions/workflows/unittest.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7dda4ee0-bd93-44ce-9f5c-bfbb551f09b0/deploy-status)](https://app.netlify.com/sites/merde/deploys)
