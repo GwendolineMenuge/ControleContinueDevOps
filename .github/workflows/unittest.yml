@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch:  # Ajouté pour pouvoir lancer le workflow manuellement
 
 jobs:
   test:
@@ -23,10 +24,10 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        
+
       - name: Install jq
         run: sudo apt-get install -y jq
-        
+
       - name: Run tests
         run: npm test -- --json --outputFile=test-results.json
 
@@ -54,6 +55,4 @@ jobs:
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git commit -m "Mise à jour des résultats des tests dans le README"
-          git push
+          git diff --quiet && echo "Pas de modifications à committer" || (git add README.md && git commit -m "Mise à jour des résultats des tests dans le README" && git push)
