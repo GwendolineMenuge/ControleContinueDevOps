@@ -23,7 +23,10 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
+        
+      - name: Install jq
+        run: sudo apt-get install -y jq
+        
       - name: Run tests
         run: npm test -- --json --outputFile=test-results.json
 
