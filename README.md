@@ -1,5 +1,3 @@
-![Tests](https://github.com/GwendolineMenuge/ControleContinueDevOps/actions/workflows/tests.yml/badge.svg)
-
 # DevOps Project
 
 Ce projet est destiné à valider les connaissances en DevOps des élèves de 3ème année d'informatique.
@@ -13,3 +11,4 @@ Ce projet est destiné à valider les connaissances en DevOps des élèves de 3�
 
 ## Test Results
 
+![Tests](https://github.com/GwendolineMenuge/ControleContinueDevOps/actions/workflows/unittest.yml/badge.svg)
